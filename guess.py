@@ -22,7 +22,11 @@ def get_input():
             return guess_input
             break
 
-
+def high_low(number):
+    if number > random_number:
+        print("That is too high guess again")
+    elif number < random_number:
+        print("That is too low guess again")
 
 counter = 1
 while True:

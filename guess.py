@@ -29,8 +29,9 @@ def high_low(number):
         print("That is too low guess again")
 
 counter = 1
+print('I am thinking of a number can you guess what it is?')
 while True:
-    print('I am thinking of a number can you guess what it is?')
+
     number = get_input()
     if check_number(number):
         print(f"You are correct and you did it in {counter} guesses")

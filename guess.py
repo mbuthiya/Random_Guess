@@ -23,4 +23,14 @@ def get_input():
             break
 
 
-print('I am thinking of a number can you guess what it is?')
+
+counter = 1
+while True:
+    print('I am thinking of a number can you guess what it is?')
+    number = get_input()
+    if check_number(number):
+        print(f"You are correct and you did it in {counter} guesses")
+        break
+    else:
+        high_low(number)
+    counter += 1
